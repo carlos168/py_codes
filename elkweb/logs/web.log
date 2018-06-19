@@ -1,0 +1,399 @@
+[12/Jun/2018 02:09:30] "GET /api/show_miners HTTP/1.1" 200 264
+[12/Jun/2018 02:09:32] "GET /api/show_miners HTTP/1.1" 200 264
+[12/Jun/2018 03:32:59] "GET /api/show_miners HTTP/1.1" 200 264
+[12/Jun/2018 03:33:11] "GET /api/show_miners?miner_name= HTTP/1.1" 200 264
+[12/Jun/2018 03:33:20] "GET /api/show_miners?miner_name=dd HTTP/1.1" 200 264
+[12/Jun/2018 03:33:24] "GET /api/show_miners HTTP/1.1" 200 264
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 12, 2018 - 02:09:02
+Django version 1.11.12, using settings 'elkweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x10ce4fa28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/commands/runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/lsx/src_git/py_src/elkweb/elkweb/urls.py", line 19, in <module>
+    import alarm.urls
+  File "/Users/lsx/src_git/py_src/elkweb/alarm/urls.py", line 3, in <module>
+    from views import login
+ImportError: cannot import name login
+Unhandled exception in thread started by <function wrapper at 0x1030d3a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/commands/runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/lsx/src_git/py_src/elkweb/elkweb/urls.py", line 19, in <module>
+    import alarm.urls
+  File "/Users/lsx/src_git/py_src/elkweb/alarm/urls.py", line 3, in <module>
+    from views import login
+ImportError: cannot import name login
+Unhandled exception in thread started by <function wrapper at 0x10c024a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/commands/runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/lsx/src_git/py_src/elkweb/elkweb/urls.py", line 19, in <module>
+    import alarm.urls
+  File "/Users/lsx/src_git/py_src/elkweb/alarm/urls.py", line 3, in <module>
+    from views import login
+ImportError: cannot import name login
+Unhandled exception in thread started by <function wrapper at 0x103c4ca28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/commands/runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/lsx/src_git/py_src/elkweb/elkweb/urls.py", line 19, in <module>
+    import alarm.urls
+  File "/Users/lsx/src_git/py_src/elkweb/alarm/urls.py", line 3, in <module>
+    from views import login
+ImportError: cannot import name login
+Unhandled exception in thread started by <function wrapper at 0x103762a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/commands/runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/lsx/src_git/py_src/elkweb/elkweb/urls.py", line 19, in <module>
+    import alarm.urls
+  File "/Users/lsx/src_git/py_src/elkweb/alarm/urls.py", line 2, in <module>
+    from views import miner
+ImportError: cannot import name miner
+Unhandled exception in thread started by <function wrapper at 0x1082e5a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/commands/runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/lsx/src_git/py_src/elkweb/elkweb/urls.py", line 19, in <module>
+    import alarm.urls
+  File "/Users/lsx/src_git/py_src/elkweb/alarm/urls.py", line 2, in <module>
+    from views import miner
+ImportError: cannot import name miner
+Unhandled exception in thread started by <function wrapper at 0x10ac41a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/commands/runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/lsx/src_git/py_src/elkweb/elkweb/urls.py", line 19, in <module>
+    import alarm.urls
+  File "/Users/lsx/src_git/py_src/elkweb/alarm/urls.py", line 2, in <module>
+    from views import miner
+ImportError: cannot import name miner
+Unhandled exception in thread started by <function wrapper at 0x110e2ca28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/commands/runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/lsx/src_git/py_src/elkweb/elkweb/urls.py", line 19, in <module>
+    import alarm.urls
+  File "/Users/lsx/src_git/py_src/elkweb/alarm/urls.py", line 2, in <module>
+    from views import miner
+ImportError: cannot import name miner
+Unhandled exception in thread started by <function wrapper at 0x10bb69a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/commands/runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/lsx/src_git/py_src/elkweb/elkweb/urls.py", line 19, in <module>
+    import alarm.urls
+  File "/Users/lsx/src_git/py_src/elkweb/alarm/urls.py", line 2, in <module>
+    import views.miner
+ImportError: No module named miner
+Unhandled exception in thread started by <function wrapper at 0x111284a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/commands/runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/lsx/src_git/py_src/elkweb/elkweb/urls.py", line 19, in <module>
+    import alarm.urls
+  File "/Users/lsx/src_git/py_src/elkweb/alarm/urls.py", line 2, in <module>
+    import alarm.views.miner
+ImportError: No module named miner
+Unhandled exception in thread started by <function wrapper at 0x110b2ca28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/commands/runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/2.7/site-packages/Django-1.11.12-py2.7.egg/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/lsx/src_git/py_src/elkweb/elkweb/urls.py", line 19, in <module>
+    import alarm.urls
+  File "/Users/lsx/src_git/py_src/elkweb/alarm/urls.py", line 2, in <module>
+    import alarm.views.miner
+ImportError: No module named miner
+Error: That port is already in use.

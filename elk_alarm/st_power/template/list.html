@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    <title>大算力矿机</title> 
+</head>
+<body>
+    <nav><!-- 导航 -->
+        sdsfgsrdfgdhjhgfdfghjhgfdfg
+    </nav>
+    <aside><!-- 左侧边栏 -->
+        ddsdfdsg
+    </aside>
+    <section><!-- 内容 -->
+        <table  border="1">
+          <tr>
+            <th>id</th>
+            <th>miner</th>
+            <th>power</th>
+            <th>message</th>
+            <th>status</th>
+            <th>remark</th>
+            <th>operator</th>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>Description of A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>Description of B</td>
+          </tr>
+        </table>
+    </section>
+    <footer><!-- 页脚 -->
+        easfasdgsrhs
+    </footer>
+
+
+<p>计数： <output id="result"></output></p>
+<button onclick="startWorker()">开始工作</button> 
+<button onclick="stopWorker()">停止工作</button>
+
+<p><strong>注意：</strong> Internet Explorer 9 及更早 IE 版本浏览器不支持 Web Workers.</p>
+
+<script>
+var w;
+
+function startWorker() {
+    if(typeof(Worker) !== "undefined") {
+        if(typeof(w) == "undefined") {
+            w = new Worker("demo_workers.js");
+        }
+        w.onmessage = function(event) {
+            document.getElementById("result").innerHTML = event.data;
+        };
+    } else {
+        document.getElementById("result").innerHTML = "抱歉，你的浏览器不支持 Web Workers...";
+    }
+}
+
+function stopWorker() 
+{ 
+    w.terminate();
+    w = undefined;
+}
+</script>
+
+</body>
+</html>

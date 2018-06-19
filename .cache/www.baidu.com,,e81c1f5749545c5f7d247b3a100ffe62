@@ -1,0 +1,30 @@
+status: 200
+content-length: 227
+content-location: https://www.baidu.com
+set-cookie: BD_NOT_HTTPS=1; path=/;
+ Max-Age=300, BIDUPSID=194916ED858E629CDA5E4A84F7D8553D;
+ expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/;
+ domain=.baidu.com, PSTM=1526111757; expires=Thu, 31-Dec-37 23:55:55 GMT;
+ max-age=2147483647; path=/; domain=.baidu.com
+accept-ranges: bytes
+strict-transport-security: max-age=0
+server: BWS/1.1
+last-modified: Fri, 11 May 2018 09:27:00 GMT
+connection: Keep-Alive
+x-ua-compatible: IE=Edge,chrome=1
+pragma: no-cache
+cache-control: no-cache
+date: Sat, 12 May 2018 07:55:57 GMT
+p3p: CP=" OTI DSP COR IVA OUR IND COM "
+content-type: text/html
+
+<html>
+<head>
+	<script>
+		location.replace(location.href.replace("https://","http://"));
+	</script>
+</head>
+<body>
+	<noscript><meta http-equiv="refresh" content="0;url=http://www.baidu.com/"></noscript>
+</body>
+</html>
